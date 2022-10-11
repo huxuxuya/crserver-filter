@@ -12,7 +12,7 @@
 
 Место срабатывания: `./data/nginx/rewrite.lua`
 
-Реализация: `./nginx/lualib/commit-filter.lua`
+Реализация: `./data/lualib/commit-filter.lua`
 
 Параметры:
 
@@ -48,7 +48,7 @@
 
 Место срабатывания: `./data/nginx/log.lua`
 
-Реализация: `./nginx/lualib/tg-notification.lua`
+Реализация: `./data/lualib/tg-notification.lua`
 
 Параметры:
 
@@ -63,7 +63,7 @@
 
 Место срабатывания: `./data/nginx/log.lua`
 
-Реализация: `./nginx/lualib/commit-webhook.lua`
+Реализация: `./data/lualib/commit-webhook.lua`
 
 Параметры:
 
@@ -101,7 +101,7 @@
 - в `./data/nginx/*.lua` добавить обработчик директивы
 - в файле `conf.d/crserver-filter.conf` дописать вызов этого обработчика
 
-При необходимости в каталог `./nginx/lualib` можно добавить свою библиотечную функцию, которую можно вызывать в обработчиках директив через `require`
+При необходимости в каталог `./data/lualib` можно добавить свою библиотечную функцию, которую можно вызывать в обработчиках директив через `require`
 
 ## Используемое ПО
 
