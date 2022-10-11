@@ -13,6 +13,6 @@ services:
     volumes:
     - ./conf.d/crserver-filter.conf:/etc/nginx/conf.d/crserver-filter.conf
     - ./data/nginx:/etc/nginx/lua
-    - ./nginx/lualib:/usr/local/openresty/lualib/v8/
+    - ./data/lualib:/usr/local/openresty/lualib/v8/
     - ./log:/usr/local/openresty/nginx/logs
     - /etc/ssl/certs/ca-certificates.crt:/etc/ssl/certs/ca-certificates.crt
